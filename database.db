@@ -1,0 +1,38 @@
+CREATE DATABASE IF NOT EXISTS `sql4422840` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `sql4422840`;
+
+
+CREATE TABLE IF NOT EXISTS `customers`(
+	`id` int(9) NOT NULL,
+  	`name` varchar(50) NOT NULL,
+  	`email` varchar(50) NOT NULL,
+    `curr_bal` float(10) NOT NULL,
+    PRIMARY KEY (`id`)
+);
+
+INSERT INTO customers VALUES
+
+
+(1, 'Maruthi', 'Maruthi@gmail.com',400000),
+(2, 'Hifi', 'Hifi@gmail.com', 400000),
+(3, 'Chinna', 'Chinna@gmail.com', 400000),
+(4, 'Rahul', 'Rahul@gmail.com', 400000),
+(5, 'Guru', 'Guru@gmail.com', 30000),
+(6, 'Jagadish', 'Jagadish@gmail.com', 50000),
+(7, 'Indra', 'Indra@gmail.com', 50000),
+(8, 'Pavan', 'Pavan@gmail.com',50),
+(9, 'Dharma', 'Dharma@gmail.com', 30000),
+(10, 'Bharath', 'Bharath@gmail.com', 50000);
+
+
+
+select * from customers;
+
+CREATE TABLE IF NOT EXISTS `transactions`(
+	`sname` varchar(50) NOT NULL,
+  	`rname` varchar(50) NOT NULL,
+  	`amount` int(10) NOT NULL,
+    `time` timestamp not null DEFAULT CURRENT_TIMESTAMP
+);
+
+select * from transactions;
