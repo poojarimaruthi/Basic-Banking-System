@@ -12,10 +12,10 @@ app = Flask(__name__)
 
 app.secret_key = 'a'
 
-app.config['MYSQL_HOST'] = 'sql3.freemysqlhosting.net'
-app.config['MYSQL_USER'] = 'sql3424074'
-app.config['MYSQL_PASSWORD'] = 'FDv8NGMqUe'
-app.config['MYSQL_DB'] = 'sql3424074'
+app.config['MYSQL_HOST'] = 'remotemysql.com'
+app.config['MYSQL_USER'] = 'x6WbM7vDfl'
+app.config['MYSQL_PASSWORD'] = 'Z1hscCoD9o'
+app.config['MYSQL_DB'] = 'x6WbM7vDfl'
 
 mysql = MySQL(app)
 ts = time.time()
